@@ -5,11 +5,8 @@ from os import path as op
 import io
 from setuptools import setup, find_packages
 
-with open("README.rst") as readme_file:
+with open("README.md") as readme_file:
     readme = readme_file.read()
-
-with open("HISTORY.rst") as history_file:
-    history = history_file.read()
 
 here = op.abspath(op.dirname(__file__))
 
@@ -45,7 +42,7 @@ setup(
     install_requires=install_requires,
     dependency_links=dependency_links,
     license="MIT license",
-    long_description=readme + "\n\n" + history,
+    long_description=readme,
     include_package_data=True,
     keywords="eefolium",
     name="eefolium",
