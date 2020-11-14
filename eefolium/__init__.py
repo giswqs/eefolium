@@ -2,6 +2,6 @@
 
 __author__ = """Qiusheng Wu"""
 __email__ = "giswqs@gmail.com"
-__version__ = "__version__ = '0.0.2'"
+__version__ = "__version__ = '0.0.3'"
 
 from .eefolium import *
