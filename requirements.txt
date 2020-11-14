@@ -1,2 +1,2 @@
 earthengine-api
-folium
+folium>=0.11.0
