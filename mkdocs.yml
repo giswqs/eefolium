@@ -1,0 +1,41 @@
+site_name: eefolium
+
+site_url: https://giswqs.github.io/eefolium
+
+repo_url: https://github.com/giswqs/eefolium
+
+theme:
+    name: material
+    icon:
+        repo: fontawesome/brands/github
+        features:
+            - instant
+            - navigation.expand
+            - tabs
+            - search.highlight
+
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+
+markdown_extensions:
+    - attr_list
+
+nav:
+    - Home: index.md
+    - Installation: installation.md
+    - Get Started: get-started.md
+    - Usage: usage.md
+    - Tutorials: tutorials.md
+    - Contributing: contributing.md
+    - Citations: citations.md
+    - FAQ: faq.md
+    - Voilà App: https://eefolium-tutorials.herokuapp.com
+    - Blog: https://blog.gishub.org
+    - YouTube Channel: https://www.youtube.com/c/QiushengWu
+    - Report Issues: https://github.com/giswqs/eefolium/issues
+    - API Reference:
+          - common module: common.md
+          - conversion module: conversion.md
+          - eefolium module: eefolium.md
