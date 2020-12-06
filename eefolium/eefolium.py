@@ -457,6 +457,57 @@ class Map(folium.Map):
         except:
             print("Failed to add the specified TileLayer.")
 
+    def add_COG_layer(
+        self,
+        url,
+        name='Untitled',
+        attribution=".",
+        opacity=1.0,
+        shown=True,
+        titiler_endpoint = "https://api.cogeo.xyz/",
+        **kwargs
+    ):
+        """Adds a COG TileLayer to the map.
+
+        Args:
+            url (str): The URL of the COG tile layer. 
+            name (str, optional): The layer name to use for the layer. Defaults to 'Untitled'.
+            attribution (str, optional): The attribution to use. Defaults to '.'.
+            opacity (float, optional): The opacity of the layer. Defaults to 1.
+            shown (bool, optional): A flag indicating whether the layer should be on by default. Defaults to True.
+            titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        """
+        tile_url = get_COG_tile(url, titiler_endpoint, **kwargs)
+        center= get_COG_center(url, titiler_endpoint)  # (lon, lat)
+        self.add_tile_layer(tiles=tile_url, name=name, attribution=attribution, opacity=opacity, shown=shown)
+        self.set_center(lon=center[0], lat=center[1], zoom=10)
+
+    def add_STAC_layer(
+        self,
+        url,
+        bands=None,
+        name='Untitled',
+        attribution=".",
+        opacity=1.0,
+        shown=True,
+        titiler_endpoint = "https://api.cogeo.xyz/",
+        **kwargs
+    ):
+        """Adds a STAC TileLayer to the map.
+
+        Args:
+            url (str): The URL of the COG tile layer. 
+            name (str, optional): The layer name to use for the layer. Defaults to 'Untitled'.
+            attribution (str, optional): The attribution to use. Defaults to '.'.
+            opacity (float, optional): The opacity of the layer. Defaults to 1.
+            shown (bool, optional): A flag indicating whether the layer should be on by default. Defaults to True.
+            titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        """
+        tile_url = get_STAC_tile(url, bands, titiler_endpoint, **kwargs)
+        center= get_STAC_center(url, titiler_endpoint)
+        self.add_tile_layer(tiles=tile_url, name=name, attribution=attribution, opacity=opacity, shown=shown)
+        self.set_center(lon=center[0], lat=center[1], zoom=10)
+        
     def publish(
         self,
         name=None,
