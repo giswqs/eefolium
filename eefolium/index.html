@@ -1,0 +1,2285 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://giswqs.github.io/eefolium/eefolium/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-6.1.7" name="generator"/>
+<title>eefolium module - eefolium</title>
+<link href="../assets/stylesheets/main.19753c6b.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.196e0c26.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+</head>
+<body data-md-color-accent="none" data-md-color-primary="none" data-md-color-scheme="" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#eefolium-module">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header-nav md-grid">
+<a aria-label="eefolium" class="md-header-nav__button md-logo" href="https://giswqs.github.io/eefolium" title="eefolium">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header-nav__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header-nav__title" data-md-component="header-title">
+<div class="md-header-nav__ellipsis">
+<span class="md-header-nav__topic md-ellipsis">
+            eefolium
+          </span>
+<span class="md-header-nav__topic md-ellipsis">
+            
+              eefolium module
+            
+          </span>
+</div>
+</div>
+<label class="md-header-nav__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" data-md-component="search-reset" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header-nav__source">
+<a class="md-source" href="https://github.com/giswqs/eefolium/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="eefolium" class="md-nav__button md-logo" href="https://giswqs.github.io/eefolium" title="eefolium">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    eefolium
+  </label>
+<div class="md-nav__source">
+<a class="md-source" href="https://github.com/giswqs/eefolium/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+      Home
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../installation/">
+      Installation
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../get-started/">
+      Get Started
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../usage/">
+      Usage
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tutorials/">
+      Tutorials
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../contributing/">
+      Contributing
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../citations/">
+      Citations
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../faq/">
+      FAQ
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://eefolium-tutorials.herokuapp.com">
+      Voilà App
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://blog.gishub.org">
+      Blog
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://www.youtube.com/c/QiushengWu">
+      YouTube Channel
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://github.com/giswqs/eefolium/issues">
+      Report Issues
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-13" id="nav-13" type="checkbox"/>
+<label class="md-nav__link" for="nav-13">
+      API Reference
+      <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="API Reference" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-13">
+<span class="md-nav__icon md-icon"></span>
+        API Reference
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../common/">
+      common module
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../conversion/">
+      conversion module
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        eefolium module
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+      eefolium module
+    </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium">
+    eefolium.eefolium
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map">
+    Map
+  </a>
+<nav aria-label="Map" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_basemap">
+    add_basemap()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_COG_layer">
+    add_COG_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_COG_mosaic">
+    add_COG_mosaic()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_layer">
+    add_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_layer_control">
+    add_layer_control()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_STAC_layer">
+    add_STAC_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_tile_layer">
+    add_tile_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_wms_layer">
+    add_wms_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.addLayer">
+    addLayer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.addLayerControl">
+    addLayerControl()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.center_object">
+    center_object()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.centerObject">
+    centerObject()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.publish">
+    publish()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.set_center">
+    set_center()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.set_control_visibility">
+    set_control_visibility()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.set_options">
+    set_options()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.setCenter">
+    setCenter()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.setControlVisibility">
+    setControlVisibility()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.setOptions">
+    setOptions()
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.delete_dp_report">
+    delete_dp_report()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.delete_dp_reports">
+    delete_dp_reports()
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium">
+    eefolium.eefolium
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map">
+    Map
+  </a>
+<nav aria-label="Map" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_basemap">
+    add_basemap()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_COG_layer">
+    add_COG_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_COG_mosaic">
+    add_COG_mosaic()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_layer">
+    add_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_layer_control">
+    add_layer_control()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_STAC_layer">
+    add_STAC_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_tile_layer">
+    add_tile_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.add_wms_layer">
+    add_wms_layer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.addLayer">
+    addLayer()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.addLayerControl">
+    addLayerControl()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.center_object">
+    center_object()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.centerObject">
+    centerObject()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.publish">
+    publish()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.set_center">
+    set_center()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.set_control_visibility">
+    set_control_visibility()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.set_options">
+    set_options()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.setCenter">
+    setCenter()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.setControlVisibility">
+    setControlVisibility()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.Map.setOptions">
+    setOptions()
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.delete_dp_report">
+    delete_dp_report()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#eefolium.eefolium.delete_dp_reports">
+    delete_dp_reports()
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/giswqs/eefolium/edit/master/docs/eefolium.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1 id="eefolium-module">eefolium module</h1>
+<div class="doc doc-object doc-module">
+<h2 class="hidden-toc" href="#eefolium.eefolium" id="eefolium.eefolium" style="visibility: hidden; position: absolute;">
+</h2>
+<div class="doc doc-contents first">
+<p>This module extends the folium Map class. It is designed to be used in Google Colab, as Google Colab currently does not support ipyleaflet.</p>
+<div class="doc doc-children">
+<div class="doc doc-object doc-class">
+<h2 class="doc doc-heading" id="eefolium.eefolium.Map">
+<code>Map</code>
+</h2>
+<div class="doc doc-contents">
+<p>The Map class inherits from folium.Map. By default, the Map will add Google Maps as the basemap. Set add_google_map = False to use OpenStreetMap as the basemap.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>object</code></td>
+<td>
+<p>folium map object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="doc doc-children">
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.add_basemap">
+<code class="highlight language-python">
+add_basemap<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">basemap</span><span class="o">=</span><span class="s1">'HYBRID'</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Adds a basemap to the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>basemap</code></td>
+<td><code>str</code></td>
+<td>
+<p>Can be one of string from ee_basemaps. Defaults to 'HYBRID'.</p>
+</td>
+<td><code>'HYBRID'</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_basemap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">basemap</span><span class="o">=</span><span class="s2">"HYBRID"</span><span class="p">):</span>
+    <span class="sd">"""Adds a basemap to the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        basemap (str, optional): Can be one of string from ee_basemaps. Defaults to 'HYBRID'.</span>
+<span class="sd">    """</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">ee_basemaps</span><span class="p">[</span><span class="n">basemap</span><span class="p">]</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="s2">"Basemap can only be one of the following: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ee_basemaps</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.add_COG_layer">
+<code class="highlight language-python">
+add_COG_layer<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'Untitled'</span><span class="p">,</span> <span class="n">attribution</span><span class="o">=</span><span class="s1">'.'</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">titiler_endpoint</span><span class="o">=</span><span class="s1">'https://api.cogeo.xyz/'</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Adds a COG TileLayer to the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td><code>str</code></td>
+<td>
+<p>The URL of the COG tile layer. </p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>
+<p>The layer name to use for the layer. Defaults to 'Untitled'.</p>
+</td>
+<td><code>'Untitled'</code></td>
+</tr>
+<tr>
+<td><code>attribution</code></td>
+<td><code>str</code></td>
+<td>
+<p>The attribution to use. Defaults to '.'.</p>
+</td>
+<td><code>'.'</code></td>
+</tr>
+<tr>
+<td><code>opacity</code></td>
+<td><code>float</code></td>
+<td>
+<p>The opacity of the layer. Defaults to 1.</p>
+</td>
+<td><code>1.0</code></td>
+</tr>
+<tr>
+<td><code>shown</code></td>
+<td><code>bool</code></td>
+<td>
+<p>A flag indicating whether the layer should be on by default. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>titiler_endpoint</code></td>
+<td><code>str</code></td>
+<td>
+<p>Titiler endpoint. Defaults to "https://api.cogeo.xyz/".</p>
+</td>
+<td><code>'https://api.cogeo.xyz/'</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_COG_layer</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">url</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">'Untitled'</span><span class="p">,</span>
+    <span class="n">attribution</span><span class="o">=</span><span class="s2">"."</span><span class="p">,</span>
+    <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">titiler_endpoint</span> <span class="o">=</span> <span class="s2">"https://api.cogeo.xyz/"</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">kwargs</span>
+<span class="p">):</span>
+    <span class="sd">"""Adds a COG TileLayer to the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): The URL of the COG tile layer. </span>
+<span class="sd">        name (str, optional): The layer name to use for the layer. Defaults to 'Untitled'.</span>
+<span class="sd">        attribution (str, optional): The attribution to use. Defaults to '.'.</span>
+<span class="sd">        opacity (float, optional): The opacity of the layer. Defaults to 1.</span>
+<span class="sd">        shown (bool, optional): A flag indicating whether the layer should be on by default. Defaults to True.</span>
+<span class="sd">        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".</span>
+<span class="sd">    """</span>
+    <span class="n">tile_url</span> <span class="o">=</span> <span class="n">get_COG_tile</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">titiler_endpoint</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="n">center</span><span class="o">=</span> <span class="n">get_COG_center</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">titiler_endpoint</span><span class="p">)</span>  <span class="c1"># (lon, lat)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add_tile_layer</span><span class="p">(</span><span class="n">tiles</span><span class="o">=</span><span class="n">tile_url</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">attribution</span><span class="o">=</span><span class="n">attribution</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="n">opacity</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="n">shown</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_center</span><span class="p">(</span><span class="n">lon</span><span class="o">=</span><span class="n">center</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">lat</span><span class="o">=</span><span class="n">center</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.add_COG_mosaic">
+<code class="highlight language-python">
+add_COG_mosaic<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">links</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'Untitled'</span><span class="p">,</span> <span class="n">attribution</span><span class="o">=</span><span class="s1">'.'</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">titiler_endpoint</span><span class="o">=</span><span class="s1">'https://api.cogeo.xyz/'</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="s1">'anonymous'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">show_footprints</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a virtual mosaic of COGs to the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>links</code></td>
+<td><code>list</code></td>
+<td>
+<p>A list of links pointing to COGs.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>
+<p>The layer name to use for the layer. Defaults to 'Untitled'.</p>
+</td>
+<td><code>'Untitled'</code></td>
+</tr>
+<tr>
+<td><code>attribution</code></td>
+<td><code>str</code></td>
+<td>
+<p>The attribution to use. Defaults to '.'.</p>
+</td>
+<td><code>'.'</code></td>
+</tr>
+<tr>
+<td><code>opacity</code></td>
+<td><code>float</code></td>
+<td>
+<p>The opacity of the layer. Defaults to 1.</p>
+</td>
+<td><code>1.0</code></td>
+</tr>
+<tr>
+<td><code>shown</code></td>
+<td><code>bool</code></td>
+<td>
+<p>A flag indicating whether the layer should be on by default. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>titiler_endpoint</code></td>
+<td><code>str</code></td>
+<td>
+<p>Titiler endpoint. Defaults to "https://api.cogeo.xyz/".</p>
+</td>
+<td><code>'https://api.cogeo.xyz/'</code></td>
+</tr>
+<tr>
+<td><code>username</code></td>
+<td><code>str</code></td>
+<td>
+<p>The username to create mosaic using the titiler endpoint. Defaults to 'anonymous'.</p>
+</td>
+<td><code>'anonymous'</code></td>
+</tr>
+<tr>
+<td><code>overwrite</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether or not to replace existing layer with the same layer name. Defaults to False.</p>
+</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td><code>show_footprints</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether or not to show footprints of COGs. Defaults to False.</p>
+</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td><code>verbose</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether or not to print descriptions. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_COG_mosaic</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">links</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">'Untitled'</span><span class="p">,</span>
+    <span class="n">attribution</span><span class="o">=</span><span class="s2">"."</span><span class="p">,</span>
+    <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">titiler_endpoint</span> <span class="o">=</span> <span class="s2">"https://api.cogeo.xyz/"</span><span class="p">,</span>
+    <span class="n">username</span><span class="o">=</span><span class="s1">'anonymous'</span><span class="p">,</span> 
+    <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">show_footprints</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">kwargs</span>
+<span class="p">):</span>
+    <span class="sd">"""Add a virtual mosaic of COGs to the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        links (list): A list of links pointing to COGs.</span>
+<span class="sd">        name (str, optional): The layer name to use for the layer. Defaults to 'Untitled'.</span>
+<span class="sd">        attribution (str, optional): The attribution to use. Defaults to '.'.</span>
+<span class="sd">        opacity (float, optional): The opacity of the layer. Defaults to 1.</span>
+<span class="sd">        shown (bool, optional): A flag indicating whether the layer should be on by default. Defaults to True.</span>
+<span class="sd">        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".</span>
+<span class="sd">        username (str, optional): The username to create mosaic using the titiler endpoint. Defaults to 'anonymous'.</span>
+<span class="sd">        overwrite (bool, optional): Whether or not to replace existing layer with the same layer name. Defaults to False.</span>
+<span class="sd">        show_footprints (bool, optional): Whether or not to show footprints of COGs. Defaults to False.</span>
+<span class="sd">        verbose (bool, optional): Whether or not to print descriptions. Defaults to True.</span>
+<span class="sd">    """</span>
+    <span class="n">layername</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">"_"</span><span class="p">)</span><br/>
+<span class="n">tile</span> <span class="o">=</span> <span class="n">get_COG_mosaic</span><span class="p">(</span><span class="n">links</span><span class="p">,</span> <span class="n">titiler_endpoint</span><span class="o">=</span><span class="n">titiler_endpoint</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">layername</span><span class="o">=</span><span class="n">layername</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="n">overwrite</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add_tile_layer</span><span class="p">(</span><span class="n">tile</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">attribution</span><span class="p">,</span> <span class="n">opacity</span><span class="p">,</span> <span class="n">shown</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">show_footprints</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Generating footprints of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">)</span><span class="si">}</span><span class="s2"> COGs. This might take a while ..."</span><span class="p">)</span>
+        <span class="n">coords</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">links</span><span class="p">:</span>
+            <span class="n">coord</span> <span class="o">=</span> <span class="n">get_COG_bounds</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">coord</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">coords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">coord</span><span class="p">)</span>
+        <span class="n">fc</span> <span class="o">=</span> <span class="n">coords_to_geojson</span><span class="p">(</span><span class="n">coords</span><span class="p">)</span>
+
+        <span class="c1"># style_function = lambda x: {'opacity': 1, 'dashArray': '1', 'fillOpacity': 0, 'weight': 1}</span>
+
+        <span class="n">folium</span><span class="o">.</span><span class="n">GeoJson</span><span class="p">(</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">fc</span><span class="p">,</span>
+            <span class="c1"># style_function=style_function,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s2">"Footprints"</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="n">center</span> <span class="o">=</span> <span class="n">get_center</span><span class="p">(</span><span class="n">fc</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"The footprint layer has been added."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">center</span> <span class="o">=</span> <span class="n">get_COG_center</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">titiler_endpoint</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_center</span><span class="p">(</span><span class="n">center</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">center</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.add_layer">
+<code class="highlight language-python">
+add_layer<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ee_object</span><span class="p">,</span> <span class="n">vis_params</span><span class="o">=</span><span class="p">{},</span> <span class="n">name</span><span class="o">=</span><span class="s1">'Layer untitled'</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Adds a given EE object to the map as a layer.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ee_object</code></td>
+<td><code>Collection|Feature|Image|MapId</code></td>
+<td>
+<p>The object to add to the map.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>vis_params</code></td>
+<td><code>dict</code></td>
+<td>
+<p>The visualization parameters. Defaults to {}.</p>
+</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>
+<p>The name of the layer. Defaults to 'Layer untitled'.</p>
+</td>
+<td><code>'Layer untitled'</code></td>
+</tr>
+<tr>
+<td><code>shown</code></td>
+<td><code>bool</code></td>
+<td>
+<p>A flag indicating whether the layer should be on by default. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>opacity</code></td>
+<td><code>float</code></td>
+<td>
+<p>The layer's opacity represented as a number between 0 and 1. Defaults to 1.</p>
+</td>
+<td><code>1.0</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_layer</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> <span class="n">ee_object</span><span class="p">,</span> <span class="n">vis_params</span><span class="o">=</span><span class="p">{},</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Layer untitled"</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="p">):</span>
+    <span class="sd">"""Adds a given EE object to the map as a layer.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ee_object (Collection|Feature|Image|MapId): The object to add to the map.</span>
+<span class="sd">        vis_params (dict, optional): The visualization parameters. Defaults to {}.</span>
+<span class="sd">        name (str, optional): The name of the layer. Defaults to 'Layer untitled'.</span>
+<span class="sd">        shown (bool, optional): A flag indicating whether the layer should be on by default. Defaults to True.</span>
+<span class="sd">        opacity (float, optional): The layer's opacity represented as a number between 0 and 1. Defaults to 1.</span>
+<span class="sd">    """</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">Feature</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">Geometry</span><span class="p">)</span>
+    <span class="p">):</span>
+        <span class="n">err_str</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\n\n</span><span class="s2">The image argument in 'addLayer' function must be an instace of one of ee.Image, ee.Geometry, ee.Feature or ee.FeatureCollection."</span>
+        <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="n">err_str</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">Geometry</span><span class="p">)</span>
+        <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">feature</span><span class="o">.</span><span class="n">Feature</span><span class="p">)</span>
+        <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">featurecollection</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">)</span>
+    <span class="p">):</span>
+        <span class="n">features</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">ee_object</span><span class="p">)</span>
+
+        <span class="n">width</span> <span class="o">=</span> <span class="mi">2</span>
+
+        <span class="k">if</span> <span class="s2">"width"</span> <span class="ow">in</span> <span class="n">vis_params</span><span class="p">:</span>
+            <span class="n">width</span> <span class="o">=</span> <span class="n">vis_params</span><span class="p">[</span><span class="s2">"width"</span><span class="p">]</span>
+
+        <span class="n">color</span> <span class="o">=</span> <span class="s2">"000000"</span>
+
+        <span class="k">if</span> <span class="s2">"color"</span> <span class="ow">in</span> <span class="n">vis_params</span><span class="p">:</span>
+            <span class="n">color</span> <span class="o">=</span> <span class="n">vis_params</span><span class="p">[</span><span class="s2">"color"</span><span class="p">]</span>
+
+        <span class="n">image_fill</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">style</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="s2">"fillColor"</span><span class="p">:</span> <span class="n">color</span><span class="p">})</span><span class="o">.</span><span class="n">updateMask</span><span class="p">(</span>
+            <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">image_outline</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">style</span><span class="p">(</span>
+            <span class="o">**</span><span class="p">{</span><span class="s2">"color"</span><span class="p">:</span> <span class="n">color</span><span class="p">,</span> <span class="s2">"fillColor"</span><span class="p">:</span> <span class="s2">"00000000"</span><span class="p">,</span> <span class="s2">"width"</span><span class="p">:</span> <span class="n">width</span><span class="p">}</span>
+        <span class="p">)</span>
+
+        <span class="n">image</span> <span class="o">=</span> <span class="n">image_fill</span><span class="o">.</span><span class="n">blend</span><span class="p">(</span><span class="n">image_outline</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">Image</span><span class="p">):</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">ee_object</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">imagecollection</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">):</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">mosaic</span><span class="p">()</span>
+
+    <span class="n">map_id_dict</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">image</span><span class="p">)</span><span class="o">.</span><span class="n">getMapId</span><span class="p">(</span><span class="n">vis_params</span><span class="p">)</span>
+    <span class="n">folium</span><span class="o">.</span><span class="n">raster_layers</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span>
+        <span class="n">tiles</span><span class="o">=</span><span class="n">map_id_dict</span><span class="p">[</span><span class="s2">"tile_fetcher"</span><span class="p">]</span><span class="o">.</span><span class="n">url_format</span><span class="p">,</span>
+        <span class="n">attr</span><span class="o">=</span><span class="s2">"Google Earth Engine"</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+        <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">control</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">show</span><span class="o">=</span><span class="n">shown</span><span class="p">,</span>
+        <span class="n">opacity</span><span class="o">=</span><span class="n">opacity</span><span class="p">,</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.add_layer_control">
+<code class="highlight language-python">
+add_layer_control<span class="p">(</span><span class="bp">self</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Adds layer basemap to the map.</p>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_layer_control</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">"""Adds layer basemap to the map."""</span>
+    <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.add_STAC_layer">
+<code class="highlight language-python">
+add_STAC_layer<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">bands</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'Untitled'</span><span class="p">,</span> <span class="n">attribution</span><span class="o">=</span><span class="s1">'.'</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">titiler_endpoint</span><span class="o">=</span><span class="s1">'https://api.cogeo.xyz/'</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Adds a STAC TileLayer to the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td><code>str</code></td>
+<td>
+<p>The URL of the COG tile layer. </p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>
+<p>The layer name to use for the layer. Defaults to 'Untitled'.</p>
+</td>
+<td><code>'Untitled'</code></td>
+</tr>
+<tr>
+<td><code>attribution</code></td>
+<td><code>str</code></td>
+<td>
+<p>The attribution to use. Defaults to '.'.</p>
+</td>
+<td><code>'.'</code></td>
+</tr>
+<tr>
+<td><code>opacity</code></td>
+<td><code>float</code></td>
+<td>
+<p>The opacity of the layer. Defaults to 1.</p>
+</td>
+<td><code>1.0</code></td>
+</tr>
+<tr>
+<td><code>shown</code></td>
+<td><code>bool</code></td>
+<td>
+<p>A flag indicating whether the layer should be on by default. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>titiler_endpoint</code></td>
+<td><code>str</code></td>
+<td>
+<p>Titiler endpoint. Defaults to "https://api.cogeo.xyz/".</p>
+</td>
+<td><code>'https://api.cogeo.xyz/'</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_STAC_layer</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">url</span><span class="p">,</span>
+    <span class="n">bands</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">'Untitled'</span><span class="p">,</span>
+    <span class="n">attribution</span><span class="o">=</span><span class="s2">"."</span><span class="p">,</span>
+    <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">titiler_endpoint</span> <span class="o">=</span> <span class="s2">"https://api.cogeo.xyz/"</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">kwargs</span>
+<span class="p">):</span>
+    <span class="sd">"""Adds a STAC TileLayer to the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): The URL of the COG tile layer. </span>
+<span class="sd">        name (str, optional): The layer name to use for the layer. Defaults to 'Untitled'.</span>
+<span class="sd">        attribution (str, optional): The attribution to use. Defaults to '.'.</span>
+<span class="sd">        opacity (float, optional): The opacity of the layer. Defaults to 1.</span>
+<span class="sd">        shown (bool, optional): A flag indicating whether the layer should be on by default. Defaults to True.</span>
+<span class="sd">        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".</span>
+<span class="sd">    """</span>
+    <span class="n">tile_url</span> <span class="o">=</span> <span class="n">get_STAC_tile</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">bands</span><span class="p">,</span> <span class="n">titiler_endpoint</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="n">center</span><span class="o">=</span> <span class="n">get_STAC_center</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">titiler_endpoint</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">add_tile_layer</span><span class="p">(</span><span class="n">tiles</span><span class="o">=</span><span class="n">tile_url</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">attribution</span><span class="o">=</span><span class="n">attribution</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="n">opacity</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="n">shown</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">set_center</span><span class="p">(</span><span class="n">lon</span><span class="o">=</span><span class="n">center</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">lat</span><span class="o">=</span><span class="n">center</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.add_tile_layer">
+<code class="highlight language-python">
+add_tile_layer<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tiles</span><span class="o">=</span><span class="s1">'OpenStreetMap'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attribution</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">control</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">API_key</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a XYZ tile layer to the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tiles</code></td>
+<td><code>str</code></td>
+<td>
+<p>The URL of the XYZ tile service.</p>
+</td>
+<td><code>'OpenStreetMap'</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>
+<p>The layer name to use on the layer control. Defaults to None.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>attribution</code></td>
+<td><code>str</code></td>
+<td>
+<p>The attribution of the data layer. Defaults to ''.</p>
+</td>
+<td><code>''</code></td>
+</tr>
+<tr>
+<td><code>overlay</code></td>
+<td><code>str</code></td>
+<td>
+<p>Allows overlay. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>control</code></td>
+<td><code>str</code></td>
+<td>
+<p>Adds the layer to the layer control. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>shown</code></td>
+<td><code>bool</code></td>
+<td>
+<p>A flag indicating whether the layer should be on by default. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>opacity</code></td>
+<td><code>float</code></td>
+<td>
+<p>Sets the opacity for the layer.</p>
+</td>
+<td><code>1.0</code></td>
+</tr>
+<tr>
+<td><code>API_key</code></td>
+<td><code>str</code></td>
+<td>
+<p>– API key for Cloudmade or Mapbox tiles. Defaults to True.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_tile_layer</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">tiles</span><span class="o">=</span><span class="s2">"OpenStreetMap"</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">attribution</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span>
+    <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">control</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">API_key</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="p">):</span>
+    <span class="sd">"""Add a XYZ tile layer to the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        tiles (str): The URL of the XYZ tile service.</span>
+<span class="sd">        name (str, optional): The layer name to use on the layer control. Defaults to None.</span>
+<span class="sd">        attribution (str, optional): The attribution of the data layer. Defaults to ''.</span>
+<span class="sd">        overlay (str, optional): Allows overlay. Defaults to True.</span>
+<span class="sd">        control (str, optional): Adds the layer to the layer control. Defaults to True.</span>
+<span class="sd">        shown (bool, optional): A flag indicating whether the layer should be on by default. Defaults to True.</span>
+<span class="sd">        opacity (float, optional): Sets the opacity for the layer.</span>
+<span class="sd">        API_key (str, optional): – API key for Cloudmade or Mapbox tiles. Defaults to True.</span>
+<span class="sd">    """</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">raster_layers</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span>
+            <span class="n">tiles</span><span class="o">=</span><span class="n">tiles</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">attr</span><span class="o">=</span><span class="n">attribution</span><span class="p">,</span>
+            <span class="n">overlay</span><span class="o">=</span><span class="n">overlay</span><span class="p">,</span>
+            <span class="n">control</span><span class="o">=</span><span class="n">control</span><span class="p">,</span>
+            <span class="n">show</span><span class="o">=</span><span class="n">shown</span><span class="p">,</span>
+            <span class="n">opacity</span><span class="o">=</span><span class="n">opacity</span><span class="p">,</span>
+            <span class="n">API_key</span><span class="o">=</span><span class="n">API_key</span><span class="p">,</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Failed to add the specified TileLayer."</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.add_wms_layer">
+<code class="highlight language-python">
+add_wms_layer<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">layers</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attribution</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">control</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">'image/png'</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Add a WMS layer to the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td><code>str</code></td>
+<td>
+<p>The URL of the WMS web service.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>layers</code></td>
+<td><code>str</code></td>
+<td>
+<p>Comma-separated list of WMS layers to show.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>
+<p>The layer name to use on the layer control. Defaults to None.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>attribution</code></td>
+<td><code>str</code></td>
+<td>
+<p>The attribution of the data layer. Defaults to ''.</p>
+</td>
+<td><code>''</code></td>
+</tr>
+<tr>
+<td><code>overlay</code></td>
+<td><code>str</code></td>
+<td>
+<p>Allows overlay. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>control</code></td>
+<td><code>str</code></td>
+<td>
+<p>Adds the layer to the layer control. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>shown</code></td>
+<td><code>bool</code></td>
+<td>
+<p>A flag indicating whether the layer should be on by default. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>format</code></td>
+<td><code>str</code></td>
+<td>
+<p>WMS image format (use ‘image/png’ for layers with transparency). Defaults to 'image/jpeg'.</p>
+</td>
+<td><code>'image/png'</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_wms_layer</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">url</span><span class="p">,</span>
+    <span class="n">layers</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">attribution</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span>
+    <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">control</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="nb">format</span><span class="o">=</span><span class="s2">"image/png"</span><span class="p">,</span>
+<span class="p">):</span>
+    <span class="sd">"""Add a WMS layer to the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): The URL of the WMS web service.</span>
+<span class="sd">        layers (str): Comma-separated list of WMS layers to show.</span>
+<span class="sd">        name (str, optional): The layer name to use on the layer control. Defaults to None.</span>
+<span class="sd">        attribution (str, optional): The attribution of the data layer. Defaults to ''.</span>
+<span class="sd">        overlay (str, optional): Allows overlay. Defaults to True.</span>
+<span class="sd">        control (str, optional): Adds the layer to the layer control. Defaults to True.</span>
+<span class="sd">        shown (bool, optional): A flag indicating whether the layer should be on by default. Defaults to True.</span>
+<span class="sd">        format (str, optional): WMS image format (use ‘image/png’ for layers with transparency). Defaults to 'image/jpeg'.</span>
+<span class="sd">    """</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">raster_layers</span><span class="o">.</span><span class="n">WmsTileLayer</span><span class="p">(</span>
+            <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+            <span class="n">layers</span><span class="o">=</span><span class="n">layers</span><span class="p">,</span>
+            <span class="n">attr</span><span class="o">=</span><span class="n">attribution</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">overlay</span><span class="o">=</span><span class="n">overlay</span><span class="p">,</span>
+            <span class="n">control</span><span class="o">=</span><span class="n">control</span><span class="p">,</span>
+            <span class="n">show</span><span class="o">=</span><span class="n">shown</span><span class="p">,</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Failed to add the specified WMS TileLayer."</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.addLayer">
+<code class="highlight language-python">
+addLayer<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ee_object</span><span class="p">,</span> <span class="n">vis_params</span><span class="o">=</span><span class="p">{},</span> <span class="n">name</span><span class="o">=</span><span class="s1">'Layer untitled'</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Adds a given EE object to the map as a layer.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ee_object</code></td>
+<td><code>Collection|Feature|Image|MapId</code></td>
+<td>
+<p>The object to add to the map.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>vis_params</code></td>
+<td><code>dict</code></td>
+<td>
+<p>The visualization parameters. Defaults to {}.</p>
+</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>
+<p>The name of the layer. Defaults to 'Layer untitled'.</p>
+</td>
+<td><code>'Layer untitled'</code></td>
+</tr>
+<tr>
+<td><code>shown</code></td>
+<td><code>bool</code></td>
+<td>
+<p>A flag indicating whether the layer should be on by default. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>opacity</code></td>
+<td><code>float</code></td>
+<td>
+<p>The layer's opacity represented as a number between 0 and 1. Defaults to 1.</p>
+</td>
+<td><code>1.0</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_layer</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> <span class="n">ee_object</span><span class="p">,</span> <span class="n">vis_params</span><span class="o">=</span><span class="p">{},</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Layer untitled"</span><span class="p">,</span> <span class="n">shown</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="p">):</span>
+    <span class="sd">"""Adds a given EE object to the map as a layer.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ee_object (Collection|Feature|Image|MapId): The object to add to the map.</span>
+<span class="sd">        vis_params (dict, optional): The visualization parameters. Defaults to {}.</span>
+<span class="sd">        name (str, optional): The name of the layer. Defaults to 'Layer untitled'.</span>
+<span class="sd">        shown (bool, optional): A flag indicating whether the layer should be on by default. Defaults to True.</span>
+<span class="sd">        opacity (float, optional): The layer's opacity represented as a number between 0 and 1. Defaults to 1.</span>
+<span class="sd">    """</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">Feature</span><span class="p">)</span>
+        <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">Geometry</span><span class="p">)</span>
+    <span class="p">):</span>
+        <span class="n">err_str</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\n\n</span><span class="s2">The image argument in 'addLayer' function must be an instace of one of ee.Image, ee.Geometry, ee.Feature or ee.FeatureCollection."</span>
+        <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="n">err_str</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">Geometry</span><span class="p">)</span>
+        <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">feature</span><span class="o">.</span><span class="n">Feature</span><span class="p">)</span>
+        <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">featurecollection</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">)</span>
+    <span class="p">):</span>
+        <span class="n">features</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">ee_object</span><span class="p">)</span>
+
+        <span class="n">width</span> <span class="o">=</span> <span class="mi">2</span>
+
+        <span class="k">if</span> <span class="s2">"width"</span> <span class="ow">in</span> <span class="n">vis_params</span><span class="p">:</span>
+            <span class="n">width</span> <span class="o">=</span> <span class="n">vis_params</span><span class="p">[</span><span class="s2">"width"</span><span class="p">]</span>
+
+        <span class="n">color</span> <span class="o">=</span> <span class="s2">"000000"</span>
+
+        <span class="k">if</span> <span class="s2">"color"</span> <span class="ow">in</span> <span class="n">vis_params</span><span class="p">:</span>
+            <span class="n">color</span> <span class="o">=</span> <span class="n">vis_params</span><span class="p">[</span><span class="s2">"color"</span><span class="p">]</span>
+
+        <span class="n">image_fill</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">style</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="s2">"fillColor"</span><span class="p">:</span> <span class="n">color</span><span class="p">})</span><span class="o">.</span><span class="n">updateMask</span><span class="p">(</span>
+            <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">image_outline</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">style</span><span class="p">(</span>
+            <span class="o">**</span><span class="p">{</span><span class="s2">"color"</span><span class="p">:</span> <span class="n">color</span><span class="p">,</span> <span class="s2">"fillColor"</span><span class="p">:</span> <span class="s2">"00000000"</span><span class="p">,</span> <span class="s2">"width"</span><span class="p">:</span> <span class="n">width</span><span class="p">}</span>
+        <span class="p">)</span>
+
+        <span class="n">image</span> <span class="o">=</span> <span class="n">image_fill</span><span class="o">.</span><span class="n">blend</span><span class="p">(</span><span class="n">image_outline</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">Image</span><span class="p">):</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">ee_object</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">imagecollection</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">):</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">mosaic</span><span class="p">()</span>
+
+    <span class="n">map_id_dict</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">image</span><span class="p">)</span><span class="o">.</span><span class="n">getMapId</span><span class="p">(</span><span class="n">vis_params</span><span class="p">)</span>
+    <span class="n">folium</span><span class="o">.</span><span class="n">raster_layers</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span>
+        <span class="n">tiles</span><span class="o">=</span><span class="n">map_id_dict</span><span class="p">[</span><span class="s2">"tile_fetcher"</span><span class="p">]</span><span class="o">.</span><span class="n">url_format</span><span class="p">,</span>
+        <span class="n">attr</span><span class="o">=</span><span class="s2">"Google Earth Engine"</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+        <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">control</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">show</span><span class="o">=</span><span class="n">shown</span><span class="p">,</span>
+        <span class="n">opacity</span><span class="o">=</span><span class="n">opacity</span><span class="p">,</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.addLayerControl">
+<code class="highlight language-python">
+addLayerControl<span class="p">(</span><span class="bp">self</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Adds layer basemap to the map.</p>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">add_layer_control</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">"""Adds layer basemap to the map."""</span>
+    <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.center_object">
+<code class="highlight language-python">
+center_object<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ee_object</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Centers the map view on a given object.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ee_object</code></td>
+<td><code>Element|Geometry</code></td>
+<td>
+<p>An Earth Engine object to center on - a geometry, image or feature.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>zoom</code></td>
+<td><code>int</code></td>
+<td>
+<p>The zoom level, from 1 to 24. Defaults to 10.</p>
+</td>
+<td><code>10</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">center_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ee_object</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="sd">"""Centers the map view on a given object.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ee_object (Element|Geometry): An Earth Engine object to center on - a geometry, image or feature.</span>
+<span class="sd">        zoom (int, optional): The zoom level, from 1 to 24. Defaults to 10.</span>
+<span class="sd">    """</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">lon</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">bounds</span> <span class="o">=</span> <span class="p">[[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">]]</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">Geometry</span><span class="p">):</span>
+        <span class="n">centroid</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">centroid</span><span class="p">()</span>
+        <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span> <span class="o">=</span> <span class="n">centroid</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s2">"coordinates"</span><span class="p">]</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">]]</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">featurecollection</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">):</span>
+        <span class="n">centroid</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span><span class="o">.</span><span class="n">centroid</span><span class="p">()</span>
+        <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span> <span class="o">=</span> <span class="n">centroid</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s2">"coordinates"</span><span class="p">]</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">]]</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">Image</span><span class="p">):</span>
+        <span class="n">geometry</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
+        <span class="n">coordinates</span> <span class="o">=</span> <span class="n">geometry</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s2">"coordinates"</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[</span><span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">coordinates</span><span class="p">[</span><span class="mi">2</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">imagecollection</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">):</span>
+        <span class="n">geometry</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
+        <span class="n">coordinates</span> <span class="o">=</span> <span class="n">geometry</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s2">"coordinates"</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[</span><span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">coordinates</span><span class="p">[</span><span class="mi">2</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">fit_bounds</span><span class="p">(</span><span class="n">bounds</span><span class="p">,</span> <span class="n">max_zoom</span><span class="o">=</span><span class="n">zoom</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.centerObject">
+<code class="highlight language-python">
+centerObject<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ee_object</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Centers the map view on a given object.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ee_object</code></td>
+<td><code>Element|Geometry</code></td>
+<td>
+<p>An Earth Engine object to center on - a geometry, image or feature.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>zoom</code></td>
+<td><code>int</code></td>
+<td>
+<p>The zoom level, from 1 to 24. Defaults to 10.</p>
+</td>
+<td><code>10</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">center_object</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ee_object</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="sd">"""Centers the map view on a given object.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ee_object (Element|Geometry): An Earth Engine object to center on - a geometry, image or feature.</span>
+<span class="sd">        zoom (int, optional): The zoom level, from 1 to 24. Defaults to 10.</span>
+<span class="sd">    """</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">lon</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">bounds</span> <span class="o">=</span> <span class="p">[[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">]]</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">Geometry</span><span class="p">):</span>
+        <span class="n">centroid</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">centroid</span><span class="p">()</span>
+        <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span> <span class="o">=</span> <span class="n">centroid</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s2">"coordinates"</span><span class="p">]</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">]]</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">featurecollection</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">):</span>
+        <span class="n">centroid</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span><span class="o">.</span><span class="n">centroid</span><span class="p">()</span>
+        <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span> <span class="o">=</span> <span class="n">centroid</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s2">"coordinates"</span><span class="p">]</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">]]</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">Image</span><span class="p">):</span>
+        <span class="n">geometry</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
+        <span class="n">coordinates</span> <span class="o">=</span> <span class="n">geometry</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s2">"coordinates"</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[</span><span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">coordinates</span><span class="p">[</span><span class="mi">2</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ee_object</span><span class="p">,</span> <span class="n">ee</span><span class="o">.</span><span class="n">imagecollection</span><span class="o">.</span><span class="n">ImageCollection</span><span class="p">):</span>
+        <span class="n">geometry</span> <span class="o">=</span> <span class="n">ee_object</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
+        <span class="n">coordinates</span> <span class="o">=</span> <span class="n">geometry</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()[</span><span class="s2">"coordinates"</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[</span><span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">coordinates</span><span class="p">[</span><span class="mi">2</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">fit_bounds</span><span class="p">(</span><span class="n">bounds</span><span class="p">,</span> <span class="n">max_zoom</span><span class="o">=</span><span class="n">zoom</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.publish">
+<code class="highlight language-python">
+publish<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">headline</span><span class="o">=</span><span class="s1">'Untitled'</span><span class="p">,</span> <span class="n">visibility</span><span class="o">=</span><span class="s1">'PUBLIC'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="nb">open</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Publish the map to datapane.com</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>
+<p>The URL of the map. Defaults to None.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>headline</code></td>
+<td><code>str</code></td>
+<td>
+<p>Title of the map. Defaults to 'Untitled'.</p>
+</td>
+<td><code>'Untitled'</code></td>
+</tr>
+<tr>
+<td><code>visibility</code></td>
+<td><code>str</code></td>
+<td>
+<p>Visibility of the map. It can be one of the following: PUBLIC, PRIVATE, ORG. Defaults to 'PUBLIC'.</p>
+</td>
+<td><code>'PUBLIC'</code></td>
+</tr>
+<tr>
+<td><code>overwrite</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether to overwrite the existing map with the same name. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>open</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether to open the map. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">publish</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">headline</span><span class="o">=</span><span class="s2">"Untitled"</span><span class="p">,</span>
+    <span class="n">visibility</span><span class="o">=</span><span class="s2">"PUBLIC"</span><span class="p">,</span>
+    <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="nb">open</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">):</span>
+    <span class="sd">"""Publish the map to datapane.com</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        name (str, optional): The URL of the map. Defaults to None.</span>
+<span class="sd">        headline (str, optional): Title of the map. Defaults to 'Untitled'.</span>
+<span class="sd">        visibility (str, optional): Visibility of the map. It can be one of the following: PUBLIC, PRIVATE, ORG. Defaults to 'PUBLIC'.</span>
+<span class="sd">        overwrite (bool, optional): Whether to overwrite the existing map with the same name. Defaults to True.</span>
+<span class="sd">        open (bool, optional): Whether to open the map. Defaults to True.</span>
+<span class="sd">    """</span>
+    <span class="kn">import</span> <span class="nn">webbrowser</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">datapane</span> <span class="k">as</span> <span class="nn">dp</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="s2">"The datapane Python package is not installed. You need to install and authenticate datapane first."</span>
+        <span class="p">)</span>
+        <span class="n">webbrowser</span><span class="o">.</span><span class="n">open_new_tab</span><span class="p">(</span>
+            <span class="s2">"https://docs.datapane.com/tutorials/tut-getting-started"</span>
+        <span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="kn">import</span> <span class="nn">datapane</span> <span class="k">as</span> <span class="nn">dp</span>
+
+    <span class="c1"># import logging</span>
+    <span class="c1"># logging.getLogger('googleapiclient.discovery_cache').setLevel(logging.ERROR)</span>
+
+    <span class="k">if</span> <span class="n">name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s2">"folium_"</span> <span class="o">+</span> <span class="n">random_string</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+
+    <span class="n">visibility</span> <span class="o">=</span> <span class="n">visibility</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">visibility</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"PUBLIC"</span><span class="p">,</span> <span class="s2">"PRIVATE"</span><span class="p">,</span> <span class="s2">"ORG"</span><span class="p">]:</span>
+        <span class="n">visibility</span> <span class="o">=</span> <span class="s2">"PRIVATE"</span>
+
+    <span class="k">if</span> <span class="n">overwrite</span><span class="p">:</span>
+        <span class="n">delete_dp_report</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="n">report</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="p">(</span><span class="n">dp</span><span class="o">.</span><span class="n">Plot</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+    <span class="n">report</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">headline</span><span class="o">=</span><span class="n">headline</span><span class="p">,</span> <span class="n">visibility</span><span class="o">=</span><span class="n">visibility</span><span class="p">,</span> <span class="nb">open</span><span class="o">=</span><span class="nb">open</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.set_center">
+<code class="highlight language-python">
+set_center<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Centers the map view at a given coordinates with the given zoom level.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lon</code></td>
+<td><code>float</code></td>
+<td>
+<p>The longitude of the center, in degrees.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>lat</code></td>
+<td><code>float</code></td>
+<td>
+<p>The latitude of the center, in degrees.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>zoom</code></td>
+<td><code>int</code></td>
+<td>
+<p>The zoom level, from 1 to 24. Defaults to 10.</p>
+</td>
+<td><code>10</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">set_center</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="sd">"""Centers the map view at a given coordinates with the given zoom level.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        lon (float): The longitude of the center, in degrees.</span>
+<span class="sd">        lat (float): The latitude of the center, in degrees.</span>
+<span class="sd">        zoom (int, optional): The zoom level, from 1 to 24. Defaults to 10.</span>
+<span class="sd">    """</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">fit_bounds</span><span class="p">([[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">]],</span> <span class="n">max_zoom</span><span class="o">=</span><span class="n">zoom</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.set_control_visibility">
+<code class="highlight language-python">
+set_control_visibility<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layerControl</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fullscreenControl</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">latLngPopup</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Sets the visibility of the controls on the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>layerControl</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether to show the control that allows the user to toggle layers on/off. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>fullscreenControl</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether to show the control that allows the user to make the map full-screen. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>latLngPopup</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether to show the control that pops up the Lat/lon when the user clicks on the map. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">set_control_visibility</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> <span class="n">layerControl</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fullscreenControl</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">latLngPopup</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">):</span>
+    <span class="sd">"""Sets the visibility of the controls on the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        layerControl (bool, optional): Whether to show the control that allows the user to toggle layers on/off. Defaults to True.</span>
+<span class="sd">        fullscreenControl (bool, optional): Whether to show the control that allows the user to make the map full-screen. Defaults to True.</span>
+<span class="sd">        latLngPopup (bool, optional): Whether to show the control that pops up the Lat/lon when the user clicks on the map. Defaults to True.</span>
+<span class="sd">    """</span>
+    <span class="k">if</span> <span class="n">layerControl</span><span class="p">:</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">fullscreenControl</span><span class="p">:</span>
+        <span class="n">plugins</span><span class="o">.</span><span class="n">Fullscreen</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">latLngPopup</span><span class="p">:</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">LatLngPopup</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.set_options">
+<code class="highlight language-python">
+set_options<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapTypeId</span><span class="o">=</span><span class="s1">'HYBRID'</span><span class="p">,</span> <span class="n">styles</span><span class="o">=</span><span class="p">{},</span> <span class="n">types</span><span class="o">=</span><span class="p">[])</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Adds Google basemap to the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mapTypeId</code></td>
+<td><code>str</code></td>
+<td>
+<p>A mapTypeId to set the basemap to. Can be one of "ROADMAP", "SATELLITE", "HYBRID" or "TERRAIN" to select one of the standard Google Maps API map types. Defaults to 'HYBRID'.</p>
+</td>
+<td><code>'HYBRID'</code></td>
+</tr>
+<tr>
+<td><code>styles</code></td>
+<td><code>[type]</code></td>
+<td>
+<p>A dictionary of custom MapTypeStyle objects keyed with a name that will appear in the map's Map Type Controls. Defaults to None.</p>
+</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>types</code></td>
+<td><code>[type]</code></td>
+<td>
+<p>A list of mapTypeIds to make available. If omitted, but opt_styles is specified, appends all of the style keys to the standard Google Maps API map types.. Defaults to None.</p>
+</td>
+<td><code>[]</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">setOptions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapTypeId</span><span class="o">=</span><span class="s2">"HYBRID"</span><span class="p">,</span> <span class="n">styles</span><span class="o">=</span><span class="p">{},</span> <span class="n">types</span><span class="o">=</span><span class="p">[]):</span>
+    <span class="sd">"""Adds Google basemap to the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        mapTypeId (str, optional): A mapTypeId to set the basemap to. Can be one of "ROADMAP", "SATELLITE", "HYBRID" or "TERRAIN" to select one of the standard Google Maps API map types. Defaults to 'HYBRID'.</span>
+<span class="sd">        styles ([type], optional): A dictionary of custom MapTypeStyle objects keyed with a name that will appear in the map's Map Type Controls. Defaults to None.</span>
+<span class="sd">        types ([type], optional): A list of mapTypeIds to make available. If omitted, but opt_styles is specified, appends all of the style keys to the standard Google Maps API map types.. Defaults to None.</span>
+<span class="sd">    """</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">ee_basemaps</span><span class="p">[</span><span class="n">mapTypeId</span><span class="p">]</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="s2">"Basemap can only be one of the following: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ee_basemaps</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.setCenter">
+<code class="highlight language-python">
+setCenter<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Centers the map view at a given coordinates with the given zoom level.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lon</code></td>
+<td><code>float</code></td>
+<td>
+<p>The longitude of the center, in degrees.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>lat</code></td>
+<td><code>float</code></td>
+<td>
+<p>The latitude of the center, in degrees.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>zoom</code></td>
+<td><code>int</code></td>
+<td>
+<p>The zoom level, from 1 to 24. Defaults to 10.</p>
+</td>
+<td><code>10</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">set_center</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="sd">"""Centers the map view at a given coordinates with the given zoom level.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        lon (float): The longitude of the center, in degrees.</span>
+<span class="sd">        lat (float): The latitude of the center, in degrees.</span>
+<span class="sd">        zoom (int, optional): The zoom level, from 1 to 24. Defaults to 10.</span>
+<span class="sd">    """</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">fit_bounds</span><span class="p">([[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">]],</span> <span class="n">max_zoom</span><span class="o">=</span><span class="n">zoom</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.setControlVisibility">
+<code class="highlight language-python">
+setControlVisibility<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layerControl</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fullscreenControl</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">latLngPopup</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Sets the visibility of the controls on the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>layerControl</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether to show the control that allows the user to toggle layers on/off. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>fullscreenControl</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether to show the control that allows the user to make the map full-screen. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+<tr>
+<td><code>latLngPopup</code></td>
+<td><code>bool</code></td>
+<td>
+<p>Whether to show the control that pops up the Lat/lon when the user clicks on the map. Defaults to True.</p>
+</td>
+<td><code>True</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">set_control_visibility</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span> <span class="n">layerControl</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fullscreenControl</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">latLngPopup</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">):</span>
+    <span class="sd">"""Sets the visibility of the controls on the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        layerControl (bool, optional): Whether to show the control that allows the user to toggle layers on/off. Defaults to True.</span>
+<span class="sd">        fullscreenControl (bool, optional): Whether to show the control that allows the user to make the map full-screen. Defaults to True.</span>
+<span class="sd">        latLngPopup (bool, optional): Whether to show the control that pops up the Lat/lon when the user clicks on the map. Defaults to True.</span>
+<span class="sd">    """</span>
+    <span class="k">if</span> <span class="n">layerControl</span><span class="p">:</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">fullscreenControl</span><span class="p">:</span>
+        <span class="n">plugins</span><span class="o">.</span><span class="n">Fullscreen</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">latLngPopup</span><span class="p">:</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">LatLngPopup</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="eefolium.eefolium.Map.setOptions">
+<code class="highlight language-python">
+setOptions<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapTypeId</span><span class="o">=</span><span class="s1">'HYBRID'</span><span class="p">,</span> <span class="n">styles</span><span class="o">=</span><span class="p">{},</span> <span class="n">types</span><span class="o">=</span><span class="p">[])</span> </code>
+</h3>
+<div class="doc doc-contents">
+<p>Adds Google basemap to the map.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mapTypeId</code></td>
+<td><code>str</code></td>
+<td>
+<p>A mapTypeId to set the basemap to. Can be one of "ROADMAP", "SATELLITE", "HYBRID" or "TERRAIN" to select one of the standard Google Maps API map types. Defaults to 'HYBRID'.</p>
+</td>
+<td><code>'HYBRID'</code></td>
+</tr>
+<tr>
+<td><code>styles</code></td>
+<td><code>[type]</code></td>
+<td>
+<p>A dictionary of custom MapTypeStyle objects keyed with a name that will appear in the map's Map Type Controls. Defaults to None.</p>
+</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td><code>types</code></td>
+<td><code>[type]</code></td>
+<td>
+<p>A list of mapTypeIds to make available. If omitted, but opt_styles is specified, appends all of the style keys to the standard Google Maps API map types.. Defaults to None.</p>
+</td>
+<td><code>[]</code></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">setOptions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapTypeId</span><span class="o">=</span><span class="s2">"HYBRID"</span><span class="p">,</span> <span class="n">styles</span><span class="o">=</span><span class="p">{},</span> <span class="n">types</span><span class="o">=</span><span class="p">[]):</span>
+    <span class="sd">"""Adds Google basemap to the map.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        mapTypeId (str, optional): A mapTypeId to set the basemap to. Can be one of "ROADMAP", "SATELLITE", "HYBRID" or "TERRAIN" to select one of the standard Google Maps API map types. Defaults to 'HYBRID'.</span>
+<span class="sd">        styles ([type], optional): A dictionary of custom MapTypeStyle objects keyed with a name that will appear in the map's Map Type Controls. Defaults to None.</span>
+<span class="sd">        types ([type], optional): A list of mapTypeIds to make available. If omitted, but opt_styles is specified, appends all of the style keys to the standard Google Maps API map types.. Defaults to None.</span>
+<span class="sd">    """</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">ee_basemaps</span><span class="p">[</span><span class="n">mapTypeId</span><span class="p">]</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="s2">"Basemap can only be one of the following: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ee_basemaps</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="eefolium.eefolium.delete_dp_report">
+<code class="highlight language-python">
+delete_dp_report<span class="p">(</span><span class="n">name</span><span class="p">)</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>Deletes a datapane report.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><code>str</code></td>
+<td>
+<p>Name of the report to delete.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">delete_dp_report</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="sd">"""Deletes a datapane report.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        name (str): Name of the report to delete.</span>
+<span class="sd">    """</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">datapane</span> <span class="k">as</span> <span class="nn">dp</span>
+
+        <span class="n">reports</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="o">.</span><span class="n">list</span><span class="p">()</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">reports</span><span class="p">)</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span> <span class="n">items</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
+            <span class="n">report</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="n">report</span><span class="o">.</span><span class="n">blocks</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">"url"</span><span class="p">]</span>
+            <span class="c1"># print('Deleting {}...'.format(url))</span>
+            <span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="o">.</span><span class="n">by_id</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="k">return</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="eefolium.eefolium.delete_dp_reports">
+<code class="highlight language-python">
+delete_dp_reports<span class="p">()</span> </code>
+</h2>
+<div class="doc doc-contents">
+<p>Deletes all datapane reports.</p>
+<details class="quote">
+<summary>Source code in <code>eefolium/eefolium.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">delete_dp_reports</span><span class="p">():</span>
+    <span class="sd">"""Deletes all datapane reports."""</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">datapane</span> <span class="k">as</span> <span class="nn">dp</span>
+
+        <span class="n">reports</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="o">.</span><span class="n">list</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">reports</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s2">"name"</span><span class="p">])</span>
+            <span class="n">report</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s2">"name"</span><span class="p">])</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="n">report</span><span class="o">.</span><span class="n">blocks</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">"url"</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Deleting </span><span class="si">{}</span><span class="s2">..."</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
+            <span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">dp</span><span class="o">.</span><span class="n">Report</span><span class="o">.</span><span class="n">by_id</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="k">return</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<div class="md-source-date">
+<small>
+    
+      Last update: 2020-12-08
+    
+  </small>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav aria-label="Footer" class="md-footer-nav__inner md-grid">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../conversion/" rel="prev">
+<div class="md-footer-nav__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer-nav__title">
+<div class="md-ellipsis">
+<span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                conversion module
+              </div>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+<script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+<script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+</body>
+</html>

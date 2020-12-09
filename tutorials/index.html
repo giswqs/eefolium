@@ -1,0 +1,628 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://giswqs.github.io/eefolium/tutorials/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Tutorials - eefolium</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tutorials" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://giswqs.github.io/eefolium" title="eefolium" class="md-header-nav__button md-logo" aria-label="eefolium">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            eefolium
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Tutorials
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/giswqs/eefolium/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://giswqs.github.io/eefolium" title="eefolium" class="md-nav__button md-logo" aria-label="eefolium">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    eefolium
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/giswqs/eefolium/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../get-started/" class="md-nav__link">
+      Get Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../usage/" class="md-nav__link">
+      Usage
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tutorials
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Tutorials
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#youtube-channel" class="md-nav__link">
+    YouTube Channel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geemap-tutorials" class="md-nav__link">
+    geemap Tutorials
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../citations/" class="md-nav__link">
+      Citations
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq/" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://eefolium-tutorials.herokuapp.com" class="md-nav__link">
+      Voilà App
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://blog.gishub.org" class="md-nav__link">
+      Blog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://www.youtube.com/c/QiushengWu" class="md-nav__link">
+      YouTube Channel
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/giswqs/eefolium/issues" class="md-nav__link">
+      Report Issues
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" >
+    <label class="md-nav__link" for="nav-13">
+      API Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        <span class="md-nav__icon md-icon"></span>
+        API Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../common/" class="md-nav__link">
+      common module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../conversion/" class="md-nav__link">
+      conversion module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eefolium/" class="md-nav__link">
+      eefolium module
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#youtube-channel" class="md-nav__link">
+    YouTube Channel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geemap-tutorials" class="md-nav__link">
+    geemap Tutorials
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/giswqs/eefolium/edit/master/docs/tutorials.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="tutorials">Tutorials</h1>
+<h2 id="youtube-channel">YouTube Channel</h2>
+<p>More video tutorials for eefolium and Earth Engine are available on my <a href="https://www.youtube.com/c/QiushengWu">YouTube channel</a>. If you can't access YouTube in your country, you can try <a href="http://gishub.org/xigua">西瓜视频</a> or <a href="https://space.bilibili.com/527404442">哔哩哔哩</a>。</p>
+<p><a href="https://www.youtube.com/c/QiushengWu"><img alt="Earth Engine Tutorials on YouTube" src="https://wetlands.io/file/images/youtube.png" /></a></p>
+<h2 id="geemap-tutorials">geemap Tutorials</h2>
+<ol>
+<li>Introducing the geemap Python package for interactive mapping with Google Earth Engine (<a href="https://youtu.be/h0pz3S6Tvx0">video</a> | <a href="https://i.imgur.com/pI39k7v.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/01_geemap_intro.ipynb">notebook</a>)</li>
+<li>Using basemaps in geemap and ipyleaflet for interactive mapping with Google Earth Engine (<a href="https://youtu.be/6J5ZCIUPXfI">video</a> | <a href="https://i.imgur.com/P5B2f7p.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/02_using_basemaps.ipynb">notebook</a>)</li>
+<li>Introducing the Inspector tool for Earth Engine Python API (<a href="https://youtu.be/k477ksjkaXw">video</a> | <a href="https://i.imgur.com/8d77gtI.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/03_inspector_tool.ipynb">notebook</a>)</li>
+<li>Creating a split-panel map for visualizing Earth Engine data (<a href="https://youtu.be/9EUTX8j-YVM">video</a> | <a href="https://i.imgur.com/kql7pC3.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/04_split_panel_map.ipynb">notebook</a>)</li>
+<li>Using drawing tools to interact with Earth Engine data (<a href="https://youtu.be/N7rK2aV1R4c">video</a> | <a href="https://i.imgur.com/Lm5pDUr.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/05_drawing_tools.ipynb">notebook</a>)</li>
+<li>Creating an interactive map with a marker cluster (<a href="https://youtu.be/4HycJPrwpuo">video</a> | <a href="https://i.imgur.com/GF4cOqh.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/06_marker_cluster.ipynb">notebook</a>)</li>
+<li>Converting data formats between GeoJSON and Earth Engine (<a href="https://youtu.be/DbK_SRgrCHw">video</a> | <a href="https://i.imgur.com/hVPmUG1.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/07_geojson.ipynb">notebook</a>)</li>
+<li>Automated conversion from Earth Engine JavaScripts to Python scripts and Jupyter notebooks (<a href="https://youtu.be/RpIaalFk4H8">video</a> | <a href="https://i.imgur.com/BW0zJnN.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/08_ee_js_to_ipynb.ipynb">notebook</a>)</li>
+<li>Interactive plotting of Earth Engine data with minimal coding (<a href="https://youtu.be/PDab8mkAFL0">video</a> | <a href="https://i.imgur.com/iGMRnRb.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/09_plotting.ipynb">notebook</a>)</li>
+<li>Using shapefiles with Earth Engine without having to upload data to GEE (<a href="https://youtu.be/OlNlqfj4uHo">video</a> | <a href="https://i.imgur.com/W3vNSdX.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/10_shapefiles.ipynb">notebook</a>)</li>
+<li>Exporting Earth Engine Image and ImageCollection as GeoTIFF and Numpy array (<a href="https://youtu.be/_6JOA-iiEGU">video</a> | <a href="https://i.imgur.com/RonLr0j.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/11_export_image.ipynb">notebook</a>)</li>
+<li>Computing zonal statistics with Earth Engine and exporting results as CSV or shapefile (<a href="https://youtu.be/ou-Xm3CLitM">video</a> | <a href="https://i.imgur.com/8xmUitW.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/12_zonal_statistics.ipynb">notebook</a>)</li>
+<li>Calculating zonal statistics by group (e.g., analyzing land cover composition of each country/state) (<a href="https://youtu.be/cORcGGH03gg">video</a> | <a href="https://i.imgur.com/LxD2em9.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/13_zonal_statistics_by_group.ipynb">notebook</a>)</li>
+<li>Adding a customized legend for Earth Engine data (<a href="https://youtu.be/NwnW_qOkNRw">video</a> | <a href="https://i.imgur.com/idkZHQp.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/14_legends.ipynb">notebook</a>)</li>
+<li>Converting Earth Engine JavaScripts to Python code directly within Jupyter notebook (<a href="https://youtu.be/nAzZjKKd4w0">video</a> | <a href="https://i.imgur.com/aGCBWSV.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/15_convert_js_to_py.ipynb">notebook</a>)</li>
+<li>Adding animated text to GIF images generated from Earth Engine data (<a href="https://youtu.be/fDnDVuM_Ke4">video</a> | <a href="https://i.imgur.com/MSde1om.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/16_add_animated_text.ipynb">notebook</a>)</li>
+<li>Adding colorbar and images to GIF animations generated from Earth Engine data (<a href="https://youtu.be/CpT3LQPNKJs">video</a> | <a href="https://i.imgur.com/13tFMSI.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/17_add_colorbar_to_gif.ipynb">notebook</a>)</li>
+<li>Creating Landsat timelapse animations with animated text using Earth Engine (<a href="https://youtu.be/OwjSJnGWKJs">video</a> | <a href="https://i.imgur.com/XOHOeXk.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/18_create_landsat_timelapse.ipynb">notebook</a>)</li>
+<li>How to search and import datasets from Earth Engine Data Catalog (<a href="https://youtu.be/lwtgzrHrXj8">video</a> | <a href="https://i.imgur.com/E09p64F.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/19_search_places_and_datasets.ipynb">notebook</a>)</li>
+<li>Using timeseries inspector to visualize landscape changes over time (<a href="https://youtu.be/0CZ7Aj8hCyo">video</a> | <a href="https://i.imgur.com/61wbRjK.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/20_timeseries_inspector.ipynb">notebook</a>)</li>
+<li>Exporting Earth Engine maps as HTML files and PNG images (<a href="https://youtu.be/GWMvaNQz3kY">video</a> | <a href="https://i.imgur.com/rJuXH4a.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/21_export_map_to_html_png.ipynb">notebook</a>)</li>
+<li>How to import Earth Engine Python scripts into Jupyter notebook (<a href="https://youtu.be/V7CbB9W41w8">video</a> | <a href="https://i.imgur.com/WwJoBHF.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/22_import_scripts.ipynb">notebook</a>)</li>
+<li>How to search Earth Engine API and import assets from GEE personal account (<a href="https://youtu.be/c9VJ_uRYSkw">video</a> | <a href="https://i.imgur.com/b1auzkr.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/22_import_assets.ipynb">notebook</a>)</li>
+<li>How to publish interactive Earth Engine maps (<a href="https://youtu.be/NNrrLBIqroY">video</a> | <a href="https://i.imgur.com/Hpfzazk.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/24_publish_maps.ipynb">notebook</a>)</li>
+<li>How to load local raster datasets with geemap (<a href="https://youtu.be/6XIehAnoazk">video</a> | <a href="https://i.imgur.com/nsqEt2O.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/21_export_map_to_html_png.ipynb">notebook</a>)</li>
+<li>How to create and deploy Earth Engine Apps using Python (<a href="https://youtu.be/nsIjfD83ggA">video</a> | <a href="https://i.imgur.com/Hpfzazk.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/26_heroku.ipynb">notebook</a>)</li>
+<li>How to create an interactive Earth Engine App for creating Landsat timelapse (<a href="https://youtu.be/whIXudC6r_s">video</a> | <a href="https://i.imgur.com/doHfnKp.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/27_timelapse_app.ipynb">notebook</a>)</li>
+<li>How to use your local computer as a web server for hosting Earth Engine Apps (<a href="https://youtu.be/eRDZBVJcNCk">video</a> | <a href="https://i.imgur.com/q0sJSyi.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/28_voila.ipynb">notebook</a>)</li>
+<li>How to use pydeck for rendering Earth Engine data (<a href="https://youtu.be/EIkEH4okFF4">video</a> | <a href="https://i.imgur.com/HjFB95l.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/29_pydeck.ipynb">notebook</a>)</li>
+<li>How to get image basic properties and descriptive statistics (<a href="https://youtu.be/eixBPPWgWs8">video</a> | <a href="https://i.imgur.com/3B6YhkI.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/30_image_props_stats.ipynb">notebook</a>)</li>
+<li>Machine Learning with Earth Engine - Unsupervised Classification (<a href="https://youtu.be/k9MEy2awVJQ">video</a> | <a href="https://i.imgur.com/uNQfrFx.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/31_unsupervised_classification.ipynb">notebook</a>)</li>
+<li>Machine Learning with Earth Engine - Supervised Classification (<a href="https://youtu.be/qWaEfgWi21o">video</a> | <a href="https://i.imgur.com/jJ2Xiu6.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/32_supervised_classification.ipynb">notebook</a>)</li>
+<li>Machine Learning with Earth Engine - Performing Accuracy Assessment for Image Classification (<a href="https://youtu.be/JYptiw-I8dc">video</a> | <a href="https://i.imgur.com/1JkIrF3.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/33_accuracy_assessment.ipynb">notebook</a>)</li>
+<li>Interactive extraction of pixel values and interactive region reduction (<a href="https://t.co/D0NC63KgF3">video</a> | <a href="https://i.imgur.com/LXRqSTu.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/34_extract_values.ipynb">notebook</a>)</li>
+<li>How to use geemap and Earth Engine in Google Colab (<a href="https://youtu.be/fG6kx9vq7hs">video</a> | <a href="https://i.imgur.com/OJCasMe.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/35_geemap_colab.ipynb">notebook</a>)</li>
+<li>How to find out the greenest day of the year (<a href="https://youtu.be/9KEaW4Ks5fQ">video</a> | <a href="https://i.imgur.com/eLDeb4t.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/36_quality_mosaic.ipynb">notebook</a>)</li>
+<li>How to use Earth Engine with pydeck for 3D terrain visualization (<a href="https://youtu.be/4E3zOP3-md8">video</a> | <a href="https://i.imgur.com/Gx7Y015.gif">gif</a> | <a href="https://github.com/giswqs/geemap/blob/master/examples/notebooks/37_pydeck_3d.ipynb">notebook</a>)</li>
+</ol>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: 2020-12-08
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../usage/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Usage
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../contributing/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Contributing
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
