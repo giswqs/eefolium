@@ -2351,13 +2351,13 @@ def load_GeoTIFFs(URLs):
     return ee.ImageCollection(collection)
 
 
-def get_COG_tile(url, titiler_endpoint="https://api.cogeo.xyz/", **kwargs):
+def get_COG_tile(url, titiler_endpoint="https://titiler.xyz/", **kwargs):
     """Get a tile layer from a Cloud Optimized GeoTIFF (COG).
         Source code adapted from https://developmentseed.org/titiler/examples/Working_with_CloudOptimizedGeoTIFF_simple/
 
     Args:
         url (str): HTTP URL to a COG, e.g., https://opendata.digitalglobe.com/events/mauritius-oil-spill/post-event/2020-08-12/105001001F1B5B00/105001001F1B5B00.tif
-        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://titiler.xyz/".
 
     Returns:
         tuple: Returns the COG Tile layer URL and bounds. 
@@ -2386,7 +2386,7 @@ def get_COG_tile(url, titiler_endpoint="https://api.cogeo.xyz/", **kwargs):
     return r["tiles"][0]
 
 
-def get_COG_mosaic(links, titiler_endpoint="https://api.cogeo.xyz/", username='anonymous', layername=None, overwrite=False, verbose=True, **kwargs):
+def get_COG_mosaic(links, titiler_endpoint="https://titiler.xyz/", username='anonymous', layername=None, overwrite=False, verbose=True, **kwargs):
 
     import requests
 
@@ -2432,12 +2432,12 @@ def get_COG_mosaic(links, titiler_endpoint="https://api.cogeo.xyz/", username='a
         print(e)
 
 
-def get_COG_bounds(url, titiler_endpoint="https://api.cogeo.xyz/"):
+def get_COG_bounds(url, titiler_endpoint="https://titiler.xyz/"):
     """Get the bounding box of a Cloud Optimized GeoTIFF (COG).
 
     Args:
         url (str): HTTP URL to a COG, e.g., https://opendata.digitalglobe.com/events/mauritius-oil-spill/post-event/2020-08-12/105001001F1B5B00/105001001F1B5B00.tif
-        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://titiler.xyz/".
 
     Returns:
         list: A list of values representing [left, bottom, right, top]
@@ -2455,12 +2455,12 @@ def get_COG_bounds(url, titiler_endpoint="https://api.cogeo.xyz/"):
     return bounds
 
 
-def get_COG_center(url, titiler_endpoint="https://api.cogeo.xyz/"):
+def get_COG_center(url, titiler_endpoint="https://titiler.xyz/"):
     """Get the centroid of a Cloud Optimized GeoTIFF (COG).
 
     Args:
         url (str): HTTP URL to a COG, e.g., https://opendata.digitalglobe.com/events/mauritius-oil-spill/post-event/2020-08-12/105001001F1B5B00/105001001F1B5B00.tif
-        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://titiler.xyz/".
 
     Returns:
         tuple: A tuple representing (longitude, latitude)
@@ -2470,12 +2470,12 @@ def get_COG_center(url, titiler_endpoint="https://api.cogeo.xyz/"):
     return center
 
 
-def get_COG_bands(url, titiler_endpoint="https://api.cogeo.xyz/"):
+def get_COG_bands(url, titiler_endpoint="https://titiler.xyz/"):
     """Get band names of a Cloud Optimized GeoTIFF (COG).
 
     Args:
         url (str): HTTP URL to a COG, e.g., https://opendata.digitalglobe.com/events/mauritius-oil-spill/post-event/2020-08-12/105001001F1B5B00/105001001F1B5B00.tif
-        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://titiler.xyz/".
 
     Returns:
         list: A list of band names
@@ -2493,12 +2493,12 @@ def get_COG_bands(url, titiler_endpoint="https://api.cogeo.xyz/"):
     return bands
  
 
-def get_STAC_tile(url, bands=None, titiler_endpoint="https://api.cogeo.xyz/", **kwargs):
+def get_STAC_tile(url, bands=None, titiler_endpoint="https://titiler.xyz/", **kwargs):
     """Get a tile layer from a single SpatialTemporal Asset Catalog (STAC) item.
 
     Args:
         url (str): HTTP URL to a STAC item, e.g., https://canada-spot-ortho.s3.amazonaws.com/canada_spot_orthoimages/canada_spot5_orthoimages/S5_2007/S5_11055_6057_20070622/S5_11055_6057_20070622.json
-        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://titiler.xyz/".
 
     Returns:
         tuple: Returns the COG Tile layer URL and bounds. 
@@ -2542,12 +2542,12 @@ def get_STAC_tile(url, bands=None, titiler_endpoint="https://api.cogeo.xyz/", **
     return r["tiles"][0]
 
 
-def get_STAC_bounds(url, titiler_endpoint="https://api.cogeo.xyz/"):
+def get_STAC_bounds(url, titiler_endpoint="https://titiler.xyz/"):
     """Get the bounding box of a single SpatialTemporal Asset Catalog (STAC) item.
 
     Args:
         url (str): HTTP URL to a STAC item, e.g., https://canada-spot-ortho.s3.amazonaws.com/canada_spot_orthoimages/canada_spot5_orthoimages/S5_2007/S5_11055_6057_20070622/S5_11055_6057_20070622.json
-        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://titiler.xyz/".
 
     Returns:
         list: A list of values representing [left, bottom, right, top]
@@ -2565,12 +2565,12 @@ def get_STAC_bounds(url, titiler_endpoint="https://api.cogeo.xyz/"):
     return bounds
 
 
-def get_STAC_center(url, titiler_endpoint="https://api.cogeo.xyz/"):
+def get_STAC_center(url, titiler_endpoint="https://titiler.xyz/"):
     """Get the centroid of a single SpatialTemporal Asset Catalog (STAC) item.
 
     Args:
         url (str): HTTP URL to a STAC item, e.g., https://canada-spot-ortho.s3.amazonaws.com/canada_spot_orthoimages/canada_spot5_orthoimages/S5_2007/S5_11055_6057_20070622/S5_11055_6057_20070622.json
-        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://titiler.xyz/".
 
     Returns:
         tuple: A tuple representing (longitude, latitude)
@@ -2580,12 +2580,12 @@ def get_STAC_center(url, titiler_endpoint="https://api.cogeo.xyz/"):
     return center
 
 
-def get_STAC_bands(url, titiler_endpoint="https://api.cogeo.xyz/"):
+def get_STAC_bands(url, titiler_endpoint="https://titiler.xyz/"):
     """Get band names of a single SpatialTemporal Asset Catalog (STAC) item.
 
     Args:
         url (str): HTTP URL to a STAC item, e.g., https://canada-spot-ortho.s3.amazonaws.com/canada_spot_orthoimages/canada_spot5_orthoimages/S5_2007/S5_11055_6057_20070622/S5_11055_6057_20070622.json
-        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://api.cogeo.xyz/".
+        titiler_endpoint (str, optional): Titiler endpoint. Defaults to "https://titiler.xyz/".
 
     Returns:
         list: A list of band names
